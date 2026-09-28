@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flowtopsy — Record flows. Ship test cases.</title>
+  <meta name="description" content="Flowtopsy is a Chrome extension that records browser flows and turns them into test cases, manuals, and Playwright/Cypress scaffolding." />
+  <script>
+    (function () {
+      var txn = new URLSearchParams(location.search).get("_ptxn");
+      if (txn) location.replace("checkout.html?_ptxn=" + encodeURIComponent(txn));
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #142018;
+      --muted: #4d5c52;
+      --paper: #f3f6f2;
+      --card: #ffffff;
+      --accent: #0f7a4c;
+      --line: #d5ddd6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #d9efe0 0%, transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, #e7eef2 0%, transparent 50%),
+        var(--paper);
+    }
+    main {
+      width: min(100%, 40rem);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+    .brand {
+      font-size: 0.8rem;
+      font-weight: 650;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 0.75rem;
+    }
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      margin: 0 0 1.5rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 34rem;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 2rem; }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a.btn-primary { background: var(--accent); color: #fff; }
+    a.btn-secondary { background: var(--card); color: var(--ink); border: 1px solid var(--line); }
+    ul { margin: 0; padding-left: 1.15rem; color: var(--ink); }
+    li { margin: 0.35rem 0; }
+    .foot {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .foot a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">Flowtopsy</p>
+    <h1>Record flows.<br />Ship test cases.</h1>
+    <p class="lead">Chrome extension for QA and developers: capture real browser sessions, then turn them into structured flows, manuals, and automation scaffolding.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="pricing.html">Pricing</a>
+      <a class="btn btn-secondary" href="support.html">Support</a>
+    </div>
+    <ul>
+      <li>Record clicks, inputs, navigations, and screenshots</li>
+      <li>Review timeline and generated test cases</li>
+      <li>Export Markdown, Playwright, Cypress, and manuals (Pro)</li>
+      <li>Optional Pro AI polish for manuals and test-case text</li>
+    </ul>
+    <p class="foot">
+      Contact <a href="mailto:flowtopsy2026@gmail.com">flowtopsy2026@gmail.com</a><br />
+      <a href="terms.html">Terms of service</a> ·
+      <a href="privacy.html">Privacy policy</a> ·
+      <a href="refund.html">Refund policy</a>
+    </p>
+  </main>
+</body>
+</html>
